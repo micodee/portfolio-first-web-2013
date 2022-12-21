@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Multimedia</title><link href="images/index_data/Laptop1.png" rel="shortcut icon"  type="image">
+<link href="images/style.css" rel="stylesheet" type="text/css" />
+<link href="images/nivo.css" rel="stylesheet" type="text/css" />
+
+<script src="images/jquery_sidebar.js" type="text/javascript"></script>
+<script type="text/javascript">        
+$(document).ready(function()  {         
+$('#Label1 li').hover(function() {  //mouse in         
+$(this).animate({ marginLeft:  '12px' }, 400);         
+}, function() { //mouse out          
+$(this).animate({ marginLeft: 0 }, 400);         
+});          
+});         
+</script>
+
+
+<script type='text/javascript'>
+	//<![CDATA[
+	function tb5_makeArray(n){
+	this.length = n;
+	return this.length;
+	}
+
+	tb5_messages = new tb5_makeArray(1);
+	tb5_messages[0] = "----| Multimedia |----";
+	tb5_rptType = 'infinite';
+	tb5_rptNbr = 2;
+	tb5_speed = 40;
+	tb5_delay = 1500;
+	var tb5_counter=1;
+	var tb5_currMsg=0;
+	var tb5_stsmsg="";
+	function tb5_shuffle(arr){
+	var k;
+	for (i=0; i<arr.length; i++){
+	k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+	temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+	}
+	return arr;
+	}
+	tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+	tb5_arr[i] = i;
+	tb5_sts[i] = "_";
+	}
+	tb5_arr = tb5_shuffle(tb5_arr);
+	function tb5_init(n){
+	var k;
+	if (n == tb5_arr.length){
+	if (tb5_currMsg == tb5_messages.length-1){
+	if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+	clearTimeout(tb5_timerID);
+	return;
+	}	
+	tb5_counter++;
+	tb5_currMsg=0;
+	}
+	else{
+	tb5_currMsg++;
+	}
+	n=0;
+	tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+	for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+	tb5_arr[i] = i;
+	tb5_sts[i] = "_";
+	}
+	tb5_arr = tb5_shuffle(tb5_arr);
+	tb5_sp=tb5_delay;
+	}
+	else{
+	tb5_sp=tb5_speed;
+	k = tb5_arr[n];
+	tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+	tb5_stsmsg = "";
+	for (var i=0; i<tb5_sts.length; i++)
+	tb5_stsmsg += tb5_sts[i];
+	document.title = tb5_stsmsg;
+	n++;
+	}
+	tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+	}
+	function tb5_randomizetitle(){
+	tb5_init(0);
+	}
+	tb5_randomizetitle();
+	//]]></script> 
+	<script type="text/javascript">/* CloudFlare analytics upgrade */
+	</script> 
+	<script type="text/javascript"> 
+	/* <![CDATA[ */
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-32813477-2']);
+	_gaq.push(['_trackPageview']);
+ 
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+ 
+	(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent(								"onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script> 
+
+
+	<script src="images/offerwall_data/processing.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="images/offerwall_data/jquery.js"></script>
+	<link href="images/offerwall_data/css.css" rel="stylesheet" type="text/css">
+	<script src="images/offerwall_data/apt18.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		body{
+			background: url("images/dark_wall.png") repeat scroll 0px 0px transparent;
+			margin:30px 0 0;
+		}
+		a{
+			text-decoration:none;
+			color: #DAE3FF;
+		}
+		.shadow{
+			-webkit-box-shadow: 0px 0px 1px 3px rgba(255, 255, 255, .75);
+			-moz-box-shadow: 0px 0px 1px 3px rgba(255, 255, 255, .75);
+			box-shadow: 0px 0px 1px 3px rgba(255, 255, 255, .75);
+		}
+		
+		.dynamic_img {
+			max-width: 200px;
+			border: 1px solid darkgrey;
+			-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 1);
+			-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 1);
+			box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 1);
+		}
+		
+		.dynamic_img:hover {
+			border: 1px solid black;
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(255, 0, 0, 1) !important;
+			-moz-box-shadow: 0px 0px 30px 0px rgba(255, 0, 0, 1) !important;
+			box-shadow: 0px 0px 30px 0px rgba(255, 0, 0, 1) !important;
+		}
+		
+		.wall_back{
+			background: url("images/brushed_alu_dark.png") repeat scroll 0px 0px transparent;
+		}
+		.td_back{
+			
+		}
+		.glow {
+		    text-shadow: 0 0 20px white !important;
+		    color:#A4FFA4;
+		}
+		#congrats{
+			text-shadow: 0 0 20px green;
+		    -webkit-transition: text-shadow 1s, color 1s linear;
+		    -moz-transition: text-shadow 1s, color 1s linear;
+		    -ms-transition: text-shadow 1s, color 1s linear;
+		    -o-transition: text-shadow 1s, color 1s linear;
+		    transition: text-shadow 1s, color 1s linear;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+		    resizeImage(); // initialize
+		
+		    $(window).resize(function () {
+		        resizeImage(); // initialize again when the window changes
+		    });
+		
+		    function resizeImage() {
+		    	windowWidth = $(window).width();
+		    	
+		    	percentage = ((windowWidth * .75) - 150) / 4;
+		        $('.dynamic_img').css('max-width', percentage+'px');
+		    };
+		    
+		    animate_text();
+		    
+		 });
+		 
+		 function animate_text() {
+		    var glow = $('#congrats');
+			setInterval(function(){
+			    glow.toggleClass('glow');
+			}, 1000);
+		}
+	</script>
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-37365939-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	<meta name="google-translate-customization" content="a03aa4f4ea63380-0b7a6bd48ed8ab79-g214d9e28bc4a69ee-f">
+<link href="images/offerwall_data/translateelement.css" charset="UTF-8" rel="stylesheet" type="text/css"><script src="images/offerwall_data/main.js" charset="UTF-8" type="text/javascript"></script><script src="images/offerwall_data/a.js" async="" type="text/javascript"></script><script src="images/offerwall_data/a.js" async="" type="text/javascript"></script><script src="images/offerwall_data/a.js" async="" type="text/javascript"></script><script src="images/offerwall_data/a.js" async="" type="text/javascript"></script><script src="images/offerwall_data/a.js" async="" type="text/javascript"></script><script src="images/offerwall_data/a.js" async="" type="text/javascript"></script><script src="images/offerwall_data/a.js" async="" type="text/javascript"></script><script src="images/offerwall_data/element_main.js" charset="UTF-8" type="text/javascript"></script>
+
+<script src="images/jquery.js"></script>
+<script src="images/nivo.js"></script>
+<script>
+$(window).load(function(){
+	$("#slider").nivoSlider();
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div class="transparan1">
+
+<div style="position: fixed; bottom: 0px; right: 40px;width:125px;height:135px;"><a href="#" target="_blank"><img src="images/000203A0.gif" title="Click to get more." border="0"></a><small><center><a href="http://www.komputerseo.com/" target="_blank"></a></center></small></div>
+</div>
+<div class="layout">
+
+<div class="header"><img src="images/header.jpg" width="900" height="150" /></div>
+
+<div class="hmenu">
+   <ul>
+     <li><a href="images/index.html">Home</a></li>
+     <li><a href="images/galerry.html">Galerry</a></li>
+	 <li><a href="#">Kontak</a></li>
+     <li><a href="#">About</a></li>
+   </ul>
+</div>
+
+<div class="sidebarkiri" id="Label1">
+	<div class="box">
+		<h3>Kategori</h3>
+	  <ul>
+		 <li><a href="#">Programming</a></li>
+		 <li><a href="#">Olahraga</a></li>
+		 <li><a href="#">Kesehatan</a></li>
+		 <li><a href="#">Teknologi</a></li>
+		 <li><a href="#">Hiburan</a></li>
+		 <li><a href="#">Pendidikan</a></li>
+	  </ul>
+	</div>
+	
+	<div class="box">
+		<h3>Tips</h3>
+	  <ul>
+		 <li><a href="#">Tips & Tricks</a></li>
+		 <li><a href="#">Adobe Flash</a></li>
+		 <li><a href="#">Notepad</a></li>
+		 <li><a href="#">Pemograman</a></li>
+		 <li><a href="#">Photoshop</a></li>
+		 <li><a href="#">Html</a></li>
+	  </ul>
+	</div>
+	<img src="images/Iklan1.gif" />
+ </div>
+
+<div class="content">
+<div id="slider" class="nivoSlider">
+  <img src="images/index_data/1.jpg" title="Mendapat penghargaan" />
+  <img src="images/index_data/2.jpg" />
+  <img src="images/index_data/3.jpg" title="Belajar Web" />
+  <img src="images/index_data/4.JPG" />
+  <img src="images/index_data/5.jpg" title="Pawai" />
+  <img src="images/index_data/6.jpg" />
+  <img src="images/index_data/7.jpg" title="Susur sungai" />
+</div>
+<div class="cbox">
+   <h3>News Update</h3>
+   <div class="isi">
+   <img class="foto-berita" src="images/index_data/ss1.jpg" width="150" height="150" />
+   <h2 class="judul">Lorem ipsum dolor sit amet</h2>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus, tellus rhoncus imperdiet condimentum, purus ex laoreet eros, eu placerat enim quam vitae urna. Fusce pharetra et mi sit amet aliquam. Pellentesque eros libero, scelerisque eget iaculis nec, efficitur a elit. Sed non congue erat. Etiam eu rutrum dui, sit amet tempus sem. Praesent eu sagittis ligula. Ut at volutpat nisl, sit amet commodo justo. Ut id elementum arcu. Pellentesque facilisis bibendum bibendum. Aliquam in ante gravida, blandit velit et, tristique est. Integer sit amet congue arcu, quis imperdiet est. Quisque orci lacus, gravida ut consequat quis, interdum ut ligula. Cras volutpat lacus vel nibh egestas iaculis. Sed ut varius enim.
+
+Morbi lacinia eros odio, eget condimentum ante euismod quis. Suspendisse sollicitudin tortor at nibh viverra cursus. Etiam ornare ultrices turpis nec ullamcorper. Donec sit amet dapibus leo. Vivamus pharetra tincidunt dui, vitae lacinia urna lacinia non. Aliquam ut massa non lacus auctor euismod in ullamcorper diam. Nulla nec ipsum quis eros imperdiet varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis pellentesque ante urna, in fringilla mauris suscipit at. Suspendisse venenatis velit nunc, quis rutrum libero egestas in. Ut ac lorem tellus.
+
+In vitae facilisis ipsum. Sed id pharetra dui, non pulvinar justo. Morbi varius varius iaculis. Quisque finibus pharetra tincidunt. Etiam cursus ac justo eleifend gravida. Suspendisse porttitor interdum nisl, sed accumsan felis elementum et. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in pretium quam. Cras euismod a dolor a molestie. Etiam at commodo nisl, vel vehicula lacus. Duis vestibulum iaculis nisi, et tristique turpis fringilla ullamcorper. Donec fringilla sem vitae tempus malesuada. Pellentesque vestibulum, magna ut suscipit lobortis, purus ex faucibus risus, id viverra est erat nec eros. Nulla varius sapien sapien, in convallis neque ultricies eget.
+   </div>   
+   <div class="isi"></div>
+</div>
+</div>
+   
+<div class="sidebarkanan" id="Label1">
+	<div class="boxr">
+	  <h3>Top News</h3> 
+   <ul>
+	  <li><a href="#">Rekor Terbaru Lari</a></li>
+	  <li><a href="#">Harga Tiket Pesawat Menurun</a></li>
+	  <li><a href="#">Penyelamatan Ikan Tenggelam</a></li>
+	  <li><a href="#">Menjelajahi Samudra Pasifik</a></li>
+	  <li><a href="#">Anak Berenang di Sungai</a></li>
+	  <li><a href="#">Buaya di Temukan di Sungai Arut</a></li>
+   </ul>
+	</div>
+</div>
+<div class="clear"></div>
+<div class="footer">Copyright © 2013-2014 Design by <blink>Tommy Marcellino Hidayat</blink></div>
+</div>
+</div>
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" height="540" width="960">
+                <param name="movie" value="http://download.ikmultimedia.com/html/irigkeyspro/trailers/irigkeyspro_trailer_web.swf">
+                <param name="quality" value="high">
+                <param name="allowScriptAccess" value="always">
+                <param name="FlashVars" value="links=/products/irigkeyspro">
+                <embed src="images/index2_data/irigkeyspro_trailer_web.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" flashvars="links=/products/irigkeyspro" height="0" width="0">
+            </object>
+
+
+<script src="images/offerwall_data/modernizr-0.js"></script>
+<canvas height="661" width="1366" id="theapt" style="width:100%; height:100%; position:fixed; top:0;left:0; background-color:black; z-index:-1;"></canvas>
+
+		
+
+
+<div style="position: absolute; top: -1000px; height: 1px; width: 1px;"><object id="fI0hp9feeaq" name="fI0hp9feeaq" type="application/x-shockwave-flash" data="offerwall_data/hrs.swf" height="500" width="400"><param name="allowScriptAccess" value="always"></object></div><iframe style="visibility: visible; -moz-box-sizing: content-box; width: 731px; height: 285px; display: none;" class="goog-te-menu-frame skiptranslate" frameborder="0"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+.layout{
+	background:#000;opacity:0.8;filter:alpha(opacity=80);
+	background-color:#eeeeee;
+	width:940px;
+	margin:30px auto;
+	border-radius:16px;
+	padding:15px 0px;
+	box-shadow:0px 0px 20px #CCC;
+	cursor:url(Pointer/cur116.cur),progress;
+}
+
+.header{
+	width:900px;
+	margin: 0px 20px;
+}
+
+.hmenu{
+	height:37px;
+	margin:5px 20px 5px 20px;
+	background-image:url(baru2.jpg);
+	background-repeat:repeat-x;
+	background-position:center;
+}
+
+.hmenu ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+.hmenu ul li{
+	float:left;
+	border-right:1px solid #ffffff;
+}
+
+.hmenu ul li a{
+	display:block;
+	text-decoration:none;
+	padding:10px 10px 10px 10px;
+	background-image:url(baru.jpg);
+	background-repeat:repeat-x;
+	background-position:center;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:14px;
+	color:#000;
+}
+
+.hmenu ul li a:hover{
+	background-color:#cc0000;
+	background-image:url(bg%20menu%203.jpg);
+	background-repeat:repeat-x;
+	background-position:left center;
+	color:#ffffff;
+	cursor:url(Pointer/cur117.cur),default;
+}
+
+.pilih{
+	display:block;
+	text-decoration:none;
+	padding:10px 10px 10px 10px;
+	background-image:url(bg%20menu%203.jpg);
+	background-repeat:repeat-x;
+	background-position:center;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:14px;
+	color:#000;
+}
+
+.sidebarkiri{
+	width:230px;
+	float:left;
+}
+
+.sidebarkanan{
+	width:230px;
+	float:left;
+}
+
+.content{
+	width:440px;
+	float:left;
+	margin:0px 20px 0px 20px;
+}
+
+.content ul li a{
+	color:#0000FF;
+	cursor:url(Pointer/cur117.cur),default;
+}
+
+.content a{
+	color:#0000FF;
+	cursor:url(Pointer/cur117.cur),default;
+}
+
+.content a:hover{
+	color:#C00;
+	cursor:url(Pointer/cur117.cur),default;
+	text-decoration:underline;
+}
+
+.clear{
+	clear:both;
+}
+
+
+
+
+
+.box{
+	border:1px solid#000;
+	margin:20px 0px 20px 20px;
+	width:210px;
+}
+
+.box h3{
+	margin:0px;
+	padding:3px;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:16px;
+	color:#000;
+	background-image:url(baru.jpg);
+	background-repeat:repeat-x;
+	background-position:left center;
+}
+
+.box ul{
+	margin:5px 0px 5px 0px;
+	padding:0px 20px 0px 20px;
+	list-style-type:square;
+}
+
+.box ul li a{
+	text-decoration:none;
+	color:#F00;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:15px;
+}
+
+.box ul li a:hover{
+	color:#036;
+	text-decoration:underline;
+	cursor:url(Pointer/cur117.cur),default;
+}
+
+.box ul li{
+	font-size:10px;
+	color:#036;
+	margin-bottom:5px;
+}
+
+
+
+
+
+.boxr{
+	border:1px solid#000;
+	margin-top:20px;
+	width:210px;
+}
+
+.boxr h3{
+	margin:0px;
+	padding:3px;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:16px;
+	color:#000;
+	background-image:url(baru.jpg);
+	background-repeat:repeat-x;
+	background-position:left center;
+}
+
+.boxr ul{
+	margin:5px 0px 5px 0px;
+	padding:0px 20px 0px 20px;
+	list-style-type:square;
+}
+
+.boxr ul li a{
+	text-decoration:none;
+	color:#F00;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:15px;
+}
+
+.boxr ul li a:hover{
+	color:#036;
+	text-decoration:underline;
+	cursor:url(Pointer/cur117.cur),default;
+}
+
+.boxr ul li{
+	font-size:10px;
+	color:#036;
+	margin-bottom:5px;
+}
+
+
+
+
+.sidebarkiri img{
+	margin-left:20px;
+}
+
+
+.footer{
+	text-align:center;
+	font-size:11px;
+	padding:10px 0px 10px 0px;
+}
+
+.input{
+	width:300px;
+	border:1px solid #999999;
+	padding:5px;
+	box-shadow:inset 0px 0px 3px #bbbbbb;
+}
+
+.input:focus{
+	border-color:#09f;
+	box-shadow:0px 0px 5px #06f;
+}
+
+.komentar{
+	width:300px;
+	height:300px;
+}
+
+.textarea{
+	width:300px;
+	height:200px;
+	box-shadow:inset 0px 0px 3px #bbbbbb;
+}
+
+.textarea:focus{
+	border-color:#09f;
+	box-shadow:0px 0px 5px #06f;
+}
+
+.cbox{
+	
+	border:2px solid#C00;
+	margin:20px 0px 20px 0px;
+	background-color:#f4f4f4;
+}
+
+.cbox h3{
+	margin:0px;
+	padding:3px;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:16px;
+	color:#000;
+	background-image:url(baru.jpg);
+	background-repeat:repeat-x;
+	background-position:left center;
+}
+
+.isi{
+	text-align:justify;
+	font-size:12px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	padding:5px;
+}
+
+.judul{
+	margin:0px 0px 20px 0px;
+	text-shadow:1px 1px 3px #333;
+}
+
+.foto-berita{
+	float:left;
+	margin:5px 10px 0px 0px;
+	padding:2px;
+	border:1px solid#ccc;
+	background-color:#FFF;
+}
+
+#slider{
+	margin-top:20px;
+}
+
+.gambar:hover{
+	box-shadow:0px 0px 20px #000;
+}
